@@ -6,6 +6,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css/bundle";
 import ListingItem from "../components/ListingItem";
 const url=import.meta.env.VITE_BACKEND_URL
+console.log(url)
 const Home = () => {
   const [offerListings, setOfferListings] = useState([]);
   const [saleListings, setSaleListings] = useState([]);
@@ -15,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     const fetchOfferListings = async () => {
       try {
-        const res = await fetch(url+"/api/listing/get?offer=true&limit=4");
+        const res = await fetch("https://hotelhub-tv7k.onrender.com/api/listing/get?offer=true&limit=4");
         const data = await res.json();
         setOfferListings(data);
         fetchRentListings();
