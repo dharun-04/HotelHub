@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import Contact from "../components/Contact";
-
+const url=import.meta.env.VITE_BACKEND_URL
 const Listing = () => {
   SwiperCore.use([Navigation]);
   const params = useParams();
@@ -29,7 +29,7 @@ const Listing = () => {
     const fetchListing = async () => {
       try {
         setLoading(true);
-        const res = await fetch(`/api/listing/get/${params.listingId}`);
+        const res = await fetch(url+`/api/listing/get/${params.listingId}`);
         const data = await res.json();
         if (data.success === false) {
           setError(true);
