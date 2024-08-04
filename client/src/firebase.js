@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: "alphaestate-37e93.firebaseapp.com",
-  projectId: "alphaestate-37e93",
-  storageBucket: "alphaestate-37e93.appspot.com",
-  messagingSenderId: "164896790958",
-  appId: "1:164896790958:web:c7576242c3b323e9c4503f",
+  apiKey: "AIzaSyDh6hpecJ214cGR3wB_XdQksTflNffAPh0",
+  authDomain: "hotelhub-8a309.firebaseapp.com",
+  projectId: "hotelhub-8a309",
+  storageBucket: "hotelhub-8a309.appspot.com",
+  messagingSenderId: "716338472451",
+  appId: "1:716338472451:web:260c1e3052017beab7d036"
 };
 
 // Initialize Firebase
