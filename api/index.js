@@ -47,8 +47,6 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
 });
 
-// middleware
-
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;
   const message = err.message || "Internal Server Error!";
@@ -59,3 +57,4 @@ app.use((err, req, res, next) => {
     message,
   });
 });
+
